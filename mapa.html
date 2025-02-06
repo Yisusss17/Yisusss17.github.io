@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Reciclaje - San Cristóbal</title>
+    <link rel="stylesheet" href="css/mapa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body >
+    <div class="overlay">
+    <header class="header">
+
+        
+        <div class="menu-header">
+
+            <img src="../assets/img/logo2.png" alt="logo" class="logo2">
+    
+            <a href="#" class="logo" >EcoTáchira</a>
+    
+             <input type="checkbox" id="menu">
+             
+             <label for="menu"><img src="assets/img/menu.png" class="menu-icono" alt=""></label>
+             
+             <nav class="navbar">
+    
+                <ul>
+    
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="infograma.html">infograma</a></li>
+                    <li><a href="mapa.html">mapa</a></li>
+                    <li><a href="nosotros.html">formulario</a></li>
+                    
+                </ul>
+    
+             </nav> 
+    
+    
+        </div>
+        
+    </header>
+    <div class="image">
+  
+
+    <main class="tutorial">
+        <h1>EcoMapa San Cristóbal</h1>
+        <section class="mapa_container">
+        <div id="mapa"></div>
+  </section>
+  <section class="mapa container">
+        
+    <section class="introduccion">
+        <h2>bienvenido</h2>
+        <p>
+            EcoMapa San Cristóbal es una plataforma interactiva diseñada para mejorar la gestión del reciclaje en la ciudad. A través de un mapa dinámico, los ciudadanos pueden visualizar la ubicación de los puntos de reciclaje existentes.
+        </p>
+        <h2>Propósito de la Plataforma</h2>
+        <p>El objetivo principal de EcoMapa San Cristóbal es brindar una herramienta accesible que permita a los ciudadanos:
+
+            Identificar fácilmente los puntos de reciclaje cercanos.
+            Sugerir la instalación de nuevos puntos para mejorar la cobertura de reciclaje en la ciudad.
+            Reportar irregularidades, problemas o mejoras en los puntos existentes.</p>
+
+            <h2>Funcionalidades Principales
+            </h2>
+            <p>Añadir Nuevos Puntos de Reciclaje 🏗️♻️
+
+                A través de un formulario interactivo, los usuarios pueden proponer la creación de nuevos puntos de reciclaje en zonas donde no existan.
+                La información recolectada será enviada a las autoridades municipales encargadas de la gestión de residuos para su evaluación e implementación.
+                Reportes y Observaciones 📝📍
+                
+                Los ciudadanos pueden enviar quejas, sugerencias u observaciones sobre el estado de los puntos de reciclaje.
+                Se pueden reportar contenedores llenos, falta de mantenimiento, vandalismo o cualquier otro problema que afecte la funcionalidad del sistema de reciclaje.</p>
+    
+    <section class="introduccion">
+            <h2>¿Por qué es importante agregar nuevos puntos de reciclaje?</h2>
+            <p>
+                La contaminación y el exceso de desechos afectan nuestra ciudad. Al agregar nuevos puntos de reciclaje, 
+                ayudamos a que más personas tengan acceso a lugares adecuados para desechar materiales reciclables.
+            </p>
+            
+        </section>
+    
+        <section class="pasos">
+            <h2>¿Cómo agregar un nuevo punto de reciclaje?</h2>
+    
+            <div class="paso">
+                <h3>Paso 1: Encuentra las coordenadas en Google Maps</h3>
+                <p>
+                    1️⃣ Abre <a href="https://www.google.com/maps" target="_blank">Google Maps</a> y busca el lugar donde 
+                    quieres agregar un punto de reciclaje.  
+                    2️⃣ Haz clic derecho sobre el lugar y selecciona <b>“¿Qué hay aquí?”</b>.  
+                    3️⃣ Copia las coordenadas que aparecen en la parte inferior.
+                </p>
+                <div class="imagen">
+                    <img src="assets/img/paso1.png" alt="Ejemplo en Google Maps">
+                </div>
+            </div>
+    
+            <div class="paso">
+                <h3>Paso 2: Completa el formulario en nuestra página</h3>
+                <p>
+                    Una vez tengas las coordenadas, ingresa el nombre del lugar, los materiales reciclables que acepta y 
+                    pega las coordenadas en los campos de latitud y longitud.
+                </p>
+                <div class="imagen">
+                    <img src="assets/img/paso2.png" alt="Formulario de reciclaje">
+                </div>
+            </div>
+    
+           
+            <div class="paso">
+                <h3>Paso 3: espera a que te aprueben</h3>
+                <p>
+                    tener paciencia y esperar respuesta de las autoridades pertinentes
+                </p>
+                <div class="imagen">
+                    <img src="assets/img/paso4.jpeg" alt="Mapa con nuevos puntos">
+                </div>
+            </div>
+           
+           
+            <div class="paso">
+                <h3>Paso 4: ¡Listo! Tu punto de reciclaje estará en el mapa</h3>
+                <p>
+                    Una vez envíes el formulario, tu punto de reciclaje aparecerá(siempre y cuando sea aprobado e instalado por las autoridades pertinentes) en el mapa para que otros puedan verlo 
+                    y llevar sus materiales reciclables.  
+                    🌍 ¡Estás ayudando a hacer de San Cristóbal una ciudad más limpia y ecológica!
+                </p>
+                <div class="imagen">
+                    <img src="assets/img/paso3.png" alt="Mapa con nuevos puntos">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    </div>
+    <h2>Agregar un Punto de Reciclaje</h2>
+<form id="form-reciclaje">
+    <label for="nombre">Nombre del Lugar:</label>
+    <input type="text" id="nombre" required>
+    
+    <label for="latitud">Latitud:</label>
+    <input type="number" id="latitud" step="any" required>
+
+    <label for="longitud">Longitud:</label>
+    <input type="number" id="longitud" step="any" required>
+
+    <label for="tipo">Tipo de Reciclaje:</label>
+    <input type="text" id="tipo" required>
+
+    <label for="imagen">Adjuntar imagen:</label>
+    <input type="file" name="imagen" id="imagen" accept="image/*" required>
+    <br>
+        <img id="preview">
+        <br>
+
+    <button type="submit">Agregar Punto</button>
+</form>
+
+<script>
+    document.getElementById("imagen").addEventListener("change", function(event) {
+        let file = event.target.files[0];
+
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let preview = document.getElementById("preview");
+                preview.src = e.target.result;
+                preview.style.display = "block";
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    document.getElementById("miFormulario").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe realmente
+        alert("Formulario enviado, pero la imagen no se almacena en un servidor.");
+    });
+</script>
+
+
+<div class="form-container">
+    <h2>Selecciona un punto en el mapa y escribe algo</h2>
+    <form action="#" method="post">
+        <!-- Campo desplegable -->
+        <label for="puntos-mapa">Selecciona un punto:</label>
+        <select id="puntos-mapa" name="puntos-mapa" required>
+            <option value="" disabled selected>Elige un punto</option>
+            <option value="punto1">Punto 1 - Contenedor de Reciclaje Latino</option>
+            <option value="punto2">Punto 2 - Contenedor de reciclaje Av. LOS AGUSTINOS</option>
+            <option value="punto3">Punto 3 - Contenedor de reciclaje Urb Los Teques</option>
+            <option value="punto4">Punto 4 - Contenedor de Reciclaje ULA</option>
+            <option value="punto4">Punto 4 - Contenedor de reciclaje CARABOBO - FERRERO</option>
+        </select>
+
+        <!-- Campo de texto -->
+        <label for="comentario">Escribe algo:</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe aquí..." required></textarea>
+
+        <!-- Botón de enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+   
+    <script src="js/script.js"></script>
+
+</div>
+</div>
+</body>
+</html>

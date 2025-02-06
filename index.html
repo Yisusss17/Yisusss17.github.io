@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+   
+</head>
+<body class="cuerpo">
+ <header class="header">
+
+    <div class="menu-header">
+
+        <img src="assets/img/logo2.png" alt="logo" class="logo2">
+
+        <a href="#" class="logo" >EcoTáchira</a>
+
+         <input type="checkbox" id="menu">
+         
+         <label for="menu"><img src="assets/img/menu.png" class="menu-icono" alt=""></label>
+         
+         <nav class="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="infograma.html">Infograma</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="nosotros.html">Formulario</a></li>
+                
+            </ul>
+
+         </nav>
+
+
+    </div>
+    
+    <div class="header-contenido">
+        
+        <div class="header-info">
+
+            <h1>sé responsable</h1>
+            <p>cada pequeña acción cuenta</p>
+            <p>encuentra tu punto mas cercano</p>
+
+            <a href="mapa.html" class="btn-1">empieza aqui</a>
+
+        </div>
+
+    </div>
+ </header>   
+ 
+ <div class="Carrusel-container">
+    
+    <div class="carousel">
+     
+        <div class="slide active">
+            <h2>Misión</h2>
+            <p>
+                ♻️ Misión de EcoVen
+EcoVen es una iniciativa que trabaja activamente en la educación ambiental y la gestión eficiente de residuos en San Cristóbal. Nos dedicamos a:
+
+Fomentar la conciencia ambiental mediante campañas educativas dirigidas a comunidades, instituciones y empresas, promoviendo hábitos responsables de consumo y disposición de desechos.
+Apoyar y fortalecer la infraestructura de reciclaje, brindando herramientas operativas y administrativas a organizaciones y entidades municipales responsables de la gestión de residuos.
+Implementar programas de recolección y reciclaje, facilitando la logística para la separación y procesamiento adecuado de materiales reutilizables.
+Organizar jornadas de limpieza y recuperación de espacios públicos, abordando directamente los problemas de contaminación y promoviendo la participación ciudadana.
+Incentivar modelos de economía circular, impulsando la valorización de residuos reciclables y fomentando emprendimientos sostenibles en el sector ambiental.
+A través de estas acciones, EcoVen busca transformar la relación de la ciudad con sus residuos, convirtiendo el reciclaje en un pilar fundamental del bienestar comunitario y el desarrollo sostenible en San Cristóbal.
+            </p>
+        </div>
+
+        
+        <div class="slide">
+            <h2>Visión</h2>
+            <p>
+                Ser la principal iniciativa de educación y gestión de residuos en San Cristóbal, Estado Táchira, transformando la ciudad en un modelo de sostenibilidad ambiental a nivel nacional. Buscamos generar una sociedad consciente y comprometida con el reciclaje, integrando a ciudadanos, empresas y autoridades en un ecosistema donde la reducción, reutilización y reciclaje de desechos sean prácticas habituales. Nuestro objetivo es convertir la crisis de residuos en una oportunidad para el desarrollo sostenible, promoviendo un entorno más limpio, saludable y económicamente viable para futuras generaciones.  
+
+            </p>
+        </div>
+
+        
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+
+<script src="js/carrusel.js"></script>
+     
+ <main class="main-container">
+ 
+<section class="importancia container">
+    
+    <div class="importancia-1">
+
+        <h2><span>importante</span> reciclar</h2>
+        
+         <p>te brindamos un vistazo al contexto actual del reciclaje y gestion de residuos en san cristobal</p>
+        <a href="infograma.html" class="btn-2">infograma</a>
+    </div>
+    <div class="importancia-2">
+        <img class="img-1" src="assets/img/img4.jpg" alt="reciclaje" >
+       
+    </div>
+    
+</section>
+
+<section class="importancia container">
+
+   <div class="importancia-1">
+
+        <h2><span>encuentra</span> tu punto</h2>
+         <p>si quieres empezar a reciclar, encuentra y añade nuevos puntos de reciclaje cerca tuyo</p>
+         <a href="mapa.html" class="btn-2">mapa</a>
+        
+         
+    </div>
+   
+    <div class="importancia-2">
+        <img class="img-2" src="assets/img/img2.jpg" alt="importancia" >
+</section>
+
+<section class="importancia container">
+    
+    <div class="importancia-1">
+
+        <h2><span>ayudanos</span>uniendote </h2>
+         <p>al unirte te enviaremos correos sobre eventos y puntos recientemente añadidos</p>
+        <a href="nosotros.html" class="btn-2">formulario</a>
+    </div>
+    <div class="importancia-2">
+        <img class="img-3" src="assets/img/img3.png" alt="importancia" >
+        
+    </div>
+    
+</section>
+
+ </main>
+
+ <footer class="footer-container">
+
+<h3>EcoTáchira</h3>
+
+<div class="links">
+
+    <ul>
+      <li><a href="#">inicio</a></li>
+      <li><a href="#">infograma</a></li>
+      <li><a href="#">mapa</a></li>
+      <li><a href="#">formulario</a></li>
+
+     </ul> 
+   
+</div>
+
+ 
+</footer>
+
+</body>
+
+</html>
